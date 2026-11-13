@@ -4,7 +4,7 @@
 
 Let $`M_*(R,\varepsilon)`$ be the largest, over all such finite quantum correlations with receiver dimension at most $`R`$, of the smallest nonadaptive simulation alphabet at worst-input total-variation error $`\varepsilon`$. Nonadaptive simulators may use unrestricted shared entanglement and shared randomness. In this setting they are equivalent to classical protocols with shared randomness.
 
-For every integer $`R\ge1`$ and $`0<\varepsilon\le1/2`$,
+For every integer $`R\ge1`$ and $`0\lt \varepsilon\le1/2`$,
 
 ```math
 M_*(R,\varepsilon)
@@ -20,7 +20,7 @@ The constants are universal, including when dimension and error vary together. C
 | Finite receiver dimension, exact simulation | Worst-case alphabet grows linearly with $`R`$ |
 | Nonzero simulation error | Worst-case alphabet is capped at logarithmic order in $`1/\varepsilon`$ |
 | Both limits together | One exclusion family attains the smaller order |
-| Uniform input-independent output replacement noise | The same family has exact simulation cost of order $`\min\{R,\ln(1/t)\}`$ for $`0<t\le1/2`$ |
+| Uniform input-independent output replacement noise | The same family has exact simulation cost of order $`\min\{R,\ln(1/t)\}`$ for $`0\lt t\le1/2`$ |
 
 [Tavakoli's earlier work](https://arxiv.org/abs/2611.11333) established the unbounded adaptive advantage, the exact exclusion measurement, and universal simulation upper bounds. The contribution here is a constant-density quantum exclusion construction that makes the dimension and precision bounds simultaneously tight in order. It uses standard Haar-matrix estimates and the established classical subset-guessing inequality. The [related-work account](references/RELATED_WORK.md) separates these ingredients and compares the previous construction's weaker quantitative consequence.
 
@@ -39,6 +39,12 @@ The [scientific overview](science/README.md) connects the operational question, 
 | What is inherited, and what was checked? | [Related work](references/RELATED_WORK.md), [bibliography](references/references.bib), and [verification](verification/README.md) |
 
 The [reading guide](llms.txt) maps specific questions to the complete proof files.
+
+## Learn the argument
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**, using the author's January 2018 standard-layout manuscript. The [source-to-project bridge](learning/WATROUS_BRIDGE.md) identifies relevant sections, translates notation, and separates textbook foundations from imported research theorems and the new frontier proof. The [complete two-qubit experiment](learning/WORKED_EXAMPLE.md) shows the measurements, messages, and full output distribution.
+
+The [30-milestone map](learning/MILESTONES.md) follows the project's story through 12 background milestones and 18 narrative milestones. Its two phases connect individual objects to the full model, then the construction and converse to the joint resource law. Start with the [learning guide](learning/README.md); specialists can continue directly to the scientific accounts above.
 
 ## Reproduce the checks
 

@@ -53,15 +53,15 @@ G_{ab}=V_a^\dagger V_b.
 
 Every cross block has norm less than $`1/4`$, because $`s_a+s_b\le m`$. Empty blocks have their natural zero-dimensional meaning.
 
-The matrix $`G`$ is uniformly invertible. To verify this, write a vector in its three blocks as $`z=(z_1,z_2,z_3)`$ and put $`r_a=\|z_a\|_2`$. Then
+The matrix $`G`$ is uniformly invertible. To verify this, write a vector in its three blocks as $`z=(z_1,z_2,z_3)`$ and put $`r_a=\left\|z_a\right\|_2`$. Then
 
 ```math
 \begin{aligned}
 |z^\dagger(G-I_m)z|
 &\le
-2\sum_{a<b}\|G_{ab}\|_{\mathrm{op}}r_ar_b\\
+2\sum_{a\lt b}\left\|G_{ab}\right\|_{\mathrm{op}}r_ar_b\\
 &\le
-\frac12\sum_{a<b}r_ar_b\\
+\frac12\sum_{a\lt b}r_ar_b\\
 &\le
 \frac12\sum_a r_a^2.
 \end{aligned}
@@ -97,7 +97,7 @@ B^\dagger&\tfrac12 I
 \end{pmatrix}
 ```
 
-is bounded below by $`(\tfrac12-\|B\|_{\mathrm{op}})I`$. Here that lower bound is at least $`I/4`$. If one or both blocks are empty, positivity is immediate.
+is bounded below by $`(\tfrac12-\left\|B\right\|_{\mathrm{op}})I`$. Here that lower bound is at least $`I/4`$. If one or both blocks are empty, positivity is immediate.
 
 Each diagonal block of $`G`$ appears twice with weight $`1/2`$, and each cross block appears in exactly one $`C_a`$. Therefore,
 
@@ -178,7 +178,7 @@ Equivalently, Alice remotely prepares the unnormalized conditional state $`A_{a|
 ```math
 \sum_{a,j}p(a,j\mid S)
 =
-\frac1R\sum_a\operatorname{Tr}A_{a|S}
+\frac1R\sum_a\mathrm{Tr}A_{a|S}
 =
 1.
 ```
@@ -201,4 +201,3 @@ The [basis lemma](random_bases.md) permits bases with entries in $`\mathbb Q(i)`
 This does not establish efficient local synthesis or a practical communication experiment. The theorem counts communication alphabet size and target entanglement dimension, with arbitrary local processing as specified in the model. Finding and certifying the bases, storing their descriptions, computing Alice's input-dependent POVM, and implementing it are not bounded by a claimed algorithmic runtime here.
 
 The uniform positivity margins support the exact existence proof. They do not by themselves turn an imperfect physical implementation into a zero-error protocol. Any implementation errors contribute to the allowed operational error; the [interpretation](interpretation.md) keeps this distinction explicit.
-

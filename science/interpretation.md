@@ -11,7 +11,7 @@ Let $`M_*(R,\varepsilon)`$ be the supremum, over the allowed finite adaptive cor
 ```math
 M_*(R,\varepsilon)
 =\Theta\!\left(\min\{R,1+\ln(1/\varepsilon)\}\right),
-\qquad 0<\varepsilon\leq\tfrac12,
+\qquad 0\lt \varepsilon\leq\tfrac12,
 ```
 
 with universal comparison constants. At zero error, $`M_*(R,0)=\Theta(R)`$. These are statements about the worst correlation in the specified class; they do not say that every adaptive protocol is difficult to simulate.
@@ -48,7 +48,7 @@ The same family has a sharp consequence for a specific noisy correlation. Write 
 p_{R,t}(b\mid S)=(1-t)p_R(b\mid S)+t\,u(b).
 ```
 
-For $`R\geq2048`$ and $`0<t\leq1/2`$, its minimum **exact** nonadaptive simulation alphabet obeys
+For $`R\geq2048`$ and $`0\lt t\leq1/2`$, its minimum **exact** nonadaptive simulation alphabet obeys
 
 ```math
 M_0(p_{R,t})

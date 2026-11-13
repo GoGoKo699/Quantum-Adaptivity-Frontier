@@ -12,7 +12,7 @@ Fix finite, nonempty input and output sets $`\mathcal X`$ and $`\mathcal B`$, an
 
 ```math
 p(b|x)=\sum_{a=1}^{3}
-\operatorname{tr}\!\left[\rho_{AB}
+\mathrm{tr}\!\left[\rho_{AB}
 \left(A_{a|x}\otimes B_{b|a}\right)\right].
 ```
 
@@ -28,7 +28,7 @@ A nonadaptive simulator uses an $`M`$-valued message $`m`$. Bob first measures a
 
 ```math
 q(b|x)=\sum_{m=1}^{M}\sum_c
-\operatorname{tr}\!\left[\sigma_{A'B'}
+\mathrm{tr}\!\left[\sigma_{A'B'}
 \left(E_{m|x}\otimes F_c\right)\right]
 r(b|m,c).
 ```
@@ -40,10 +40,10 @@ There is no bound relating $`\dim B'`$ to $`R`$. The shared state, its dimension
 There is only one Bob measurement because he has no independent input. Put
 
 ```math
-\pi(c)=\operatorname{tr}\!\left[\sigma_{A'B'}(I\otimes F_c)\right],
+\pi(c)=\mathrm{tr}\!\left[\sigma_{A'B'}(I\otimes F_c)\right],
 \qquad
 e(m|x,c)=
-\frac{\operatorname{tr}[\sigma_{A'B'}(E_{m|x}\otimes F_c)]}
+\frac{\mathrm{tr}[\sigma_{A'B'}(E_{m|x}\otimes F_c)]}
 {\pi(c)}
 ```
 
@@ -78,7 +78,7 @@ d_{\mathrm{TV}}(p,q)=
 \sum_{b\in\mathcal B}|p(b|x)-q(b|x)|.
 ```
 
-For $`0\le\varepsilon<1`$, let $`M_\varepsilon(p)`$ be the smallest positive integer $`M`$ for which an admissible nonadaptive simulator satisfies $`d_{\mathrm{TV}}(p,q)\le\varepsilon`$. Equality is required when $`\varepsilon=0`$. The [exact dimension upper bound](frontier.md#inherited-exact-dimension-upper-bound) ensures this minimum is finite.
+For $`0\le\varepsilon\lt 1`$, let $`M_\varepsilon(p)`$ be the smallest positive integer $`M`$ for which an admissible nonadaptive simulator satisfies $`d_{\mathrm{TV}}(p,q)\le\varepsilon`$. Equality is required when $`\varepsilon=0`$. The [exact dimension upper bound](frontier.md#inherited-exact-dimension-upper-bound) ensures this minimum is finite.
 
 The quantity studied here is
 

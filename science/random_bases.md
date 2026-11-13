@@ -18,7 +18,7 @@ There are three orthonormal bases of $`\mathbb C^R`$, represented by unitary mat
 \left\|
   U_a[:,I]^\dagger U_b[:,J]
 \right\|_{\mathrm{op}}
-<
+\lt
 \frac14
 ```
 
@@ -28,7 +28,7 @@ The same triple works simultaneously for all those pairs of subsets. Its matrice
 
 ## A complex Haar coordinate
 
-Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixed unit vectors. Unitary invariance makes $`Uy`$ uniform on the complex unit sphere, so $`|x^\dagger Uy|`$ has the distribution of the absolute value of its first coordinate. For $`0\le t<1`$,
+Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixed unit vectors. Unitary invariance makes $`Uy`$ uniform on the complex unit sphere, so $`|x^\dagger Uy|`$ has the distribution of the absolute value of its first coordinate. For $`0\le t\lt 1`$,
 
 ```math
 \Pr\!\left\{
@@ -38,7 +38,7 @@ Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixe
 (1-t^2)^{R-1}.
 ```
 
-For completeness, take independent standard complex Gaussian variables $`g_1,\ldots,g_R`$. Their squared magnitudes are independent mean-one exponential variables, and $`g/\|g\|_2`$ is uniform on the sphere. If
+For completeness, take independent standard complex Gaussian variables $`g_1,\ldots,g_R`$. Their squared magnitudes are independent mean-one exponential variables, and $`g/\left\|g\right\|_2`$ is uniform on the sphere. If
 
 ```math
 X=|g_1|^2,
@@ -66,7 +66,7 @@ Only the displayed scalar tail is used below.
 
 The unit sphere in $`\mathbb C^s`$, regarded as a subset of $`\mathbb R^{2s}`$, has a $`\delta`$-net of cardinality at most $`(1+2/\delta)^{2s}`$. One proof takes a maximal $`\delta`$-separated set on the sphere. The open balls of radius $`\delta/2`$ around its points are disjoint and lie in the ball of radius $`1+\delta/2`$. Comparing their real $`2s`$-dimensional volumes bounds their number, and maximality supplies the covering property.
 
-Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choose $`1/8`$-nets on their unit spheres. For unit vectors $`v,w`$ attaining $`|v^\dagger Aw|=\|A\|_{\mathrm{op}}`$, choose net points $`v_0,w_0`$ within $`1/8`$. Since all four vectors have norm one,
+Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choose $`1/8`$-nets on their unit spheres. For unit vectors $`v,w`$ attaining $`|v^\dagger Aw|=\left\|A\right\|_{\mathrm{op}}`$, choose net points $`v_0,w_0`$ within $`1/8`$. Since all four vectors have norm one,
 
 ```math
 \begin{aligned}
@@ -78,15 +78,15 @@ Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choo
 -
 |v_0^\dagger A(w-w_0)|\\
 &\ge
-\frac34\|A\|_{\mathrm{op}}.
+\frac34\left\|A\right\|_{\mathrm{op}}.
 \end{aligned}
 ```
 
-Thus $`\|A\|_{\mathrm{op}}\ge1/4`$ forces at least one net bilinear form to have magnitude at least $`3/16`$. After embedding the net vectors on their fixed supports into $`\mathbb C^R`$, the Haar-coordinate formula applies to each pair. There are at most $`17^{2(p+q)}`$ pairs. Consequently,
+Thus $`\left\|A\right\|_{\mathrm{op}}\ge1/4`$ forces at least one net bilinear form to have magnitude at least $`3/16`$. After embedding the net vectors on their fixed supports into $`\mathbb C^R`$, the Haar-coordinate formula applies to each pair. There are at most $`17^{2(p+q)}`$ pairs. Consequently,
 
 ```math
 \Pr\!\left\{
-  \|U[I,J]\|_{\mathrm{op}}\ge\frac14
+  \left\|U[I,J]\right\|_{\mathrm{op}}\ge\frac14
 \right\}
 \le
 17^{2(p+q)}
@@ -97,7 +97,7 @@ Empty supports never violate the desired bound.
 
 ## One union bound covers all inputs
 
-It suffices to control supports of total size exactly $`m`$. Any pair with smaller total size can be enlarged to such a pair, because $`m<R`$. A submatrix's operator norm cannot decrease when rows or columns are added.
+It suffices to control supports of total size exactly $`m`$. Any pair with smaller total size can be enlarged to such a pair, because $`m\lt R`$. A submatrix's operator norm cannot decrease when rows or columns are added.
 
 The number of ordered support pairs with total size $`m`$ is
 
@@ -120,7 +120,7 @@ B_R
 \left(\frac{247}{256}\right)^{R-1}.
 ```
 
-This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R}{m}\le(2eR/m)^m`$, and the function $`s\mapsto s\ln(2eR/s)`$ increases on $`0<s<2R`$. Using $`m\le R/1024`$ and $`\ln(1-u)\le-u`$ gives
+This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R}{m}\le(2eR/m)^m`$, and the function $`s\mapsto s\ln(2eR/s)`$ increases on $`0\lt s\lt 2R`$. Using $`m\le R/1024`$ and $`\ln(1-u)\le-u`$ gives
 
 ```math
 \ln B_R
@@ -131,14 +131,14 @@ This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R
 -\frac{9(R-1)}{256}.
 ```
 
-The elementary bounds $`\ln3<2`$, $`\ln2048<8`$, and $`\ln17<3`$ imply
+The elementary bounds $`\ln3\lt 2`$, $`\ln2048\lt 8`$, and $`\ln17\lt 3`$ imply
 
 ```math
 \ln B_R
-<
+\lt
 2+\frac{36}{1024}
 -\frac{21R}{1024}
-<
+\lt
 0
 \qquad
 (R\ge1024).
@@ -166,4 +166,3 @@ The [Gram construction](quantum_construction.md) then uses finite rational matri
 These bases allow exclusion sets containing $`\Theta(R)`$ labeled vectors while retaining the positivity margin required by the quantum measurement. The earlier mutually unbiased basis construction used a Frobenius-norm estimate with a quadratic relation between entanglement dimension and excluded-set size. The exact measurement construction itself is inherited; replacing that estimate by uniform cross-submatrix control is the step used here.
 
 The [classical exclusion converse](classical_exclusion.md) converts this constant-density family into a simulation lower bound. The [frontier theorem](frontier.md) combines it with the inherited universal upper bounds. The [interpretation](interpretation.md) separates alphabet size, bits, dimension, and the uncharged local processing.
-

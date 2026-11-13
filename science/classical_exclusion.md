@@ -8,7 +8,7 @@ The converse below is the known guessing inequality of Frenkel–Weiner, present
 
 ## The task
 
-Let $`\mathcal U`$ be a universe of size $`n`$, with $`1\le m<n`$. Alice's input is any $`m`$-element subset $`S\subset\mathcal U`$. Bob has no input and returns one label $`b\in\mathcal U`$. A protocol fails when $`b\in S`$.
+Let $`\mathcal U`$ be a universe of size $`n`$, with $`1\le m\lt n`$. Alice's input is any $`m`$-element subset $`S\subset\mathcal U`$. Bob has no input and returns one label $`b\in\mathcal U`$. A protocol fails when $`b\in S`$.
 
 The parties share arbitrary input-independent randomness and Alice sends one of $`K`$ symbols. Write the minimum worst-input failure probability as
 
@@ -60,7 +60,7 @@ The last inequality holds because consecutive ratios are related by
 ```math
 \frac{\binom m{s+1}/\binom n{s+1}}
 {\binom ms/\binom ns}
-=\frac{m-s}{n-s}<1.
+=\frac{m-s}{n-s}\lt 1.
 ```
 
 Averaging over the fixed seeds preserves the lower bound on average-input failure. The worst-input failure is at least that average. Randomness depending on the input would invalidate this argument; such preshared randomness is excluded by the model.
@@ -125,7 +125,7 @@ In this range $`m\ge R/2048`$. If $`1\le K\le m/2`$, then
 \end{aligned}
 ```
 
-Indeed $`i\le K-1<m/2`$, so $`m-i\ge m/2`$, while $`3R-i\le3R`$. The estimate is deliberately conservative; the exact binomial expression remains available for finite parameters.
+Indeed $`i\le K-1\lt m/2`$, so $`m-i\ge m/2`$, while $`3R-i\le3R`$. The estimate is deliberately conservative; the exact binomial expression remains available for finite parameters.
 
 With $`\lambda:=\ln12288`$, a simulator of error at most $`\varepsilon>0`$ and alphabet $`K\le m/2`$ must consequently satisfy
 
