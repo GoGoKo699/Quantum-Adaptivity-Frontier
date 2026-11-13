@@ -18,7 +18,7 @@ There are three orthonormal bases of $`\mathbb C^R`$, represented by unitary mat
 \left\|
   U_a[:,I]^\dagger U_b[:,J]
 \right\|_{\mathrm{op}}
-\lt 
+\lt
 \frac14
 ```
 
@@ -135,10 +135,10 @@ The elementary bounds $`\ln3\lt 2`$, $`\ln2048\lt 8`$, and $`\ln17\lt 3`$ imply
 
 ```math
 \ln B_R
-\lt 
+\lt
 2+\frac{36}{1024}
 -\frac{21R}{1024}
-\lt 
+\lt
 0
 \qquad
 (R\ge1024).
