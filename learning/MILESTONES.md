@@ -128,7 +128,7 @@ Watrous supplies the foundations. The project proof pages supply its particular 
 
 **Central question:** What does a Gram matrix retain about a collection of selected vectors?
 
-**Understanding target:** Connect the entries of $`T^\dagger T`$ to pairwise overlaps, its quadratic form to $`\|Tz\|^2`$, and its eigenvalue bounds to linear independence. Interpret cross-basis submatrix norms as bounds applying to arbitrary superpositions on their selected coordinates.
+**Understanding target:** Connect the entries of $`T^\dagger T`$ to pairwise overlaps, its quadratic form to $`\left\|Tz\right\|^2`$, and its eigenvalue bounds to linear independence. Interpret cross-basis submatrix norms as bounds applying to arbitrary superpositions on their selected coordinates.
 
 **Dependencies and story role:** M02, M03. Introduces the geometry that controls the constructed measurement globally rather than entry by entry.
 

@@ -28,11 +28,11 @@ The [frontmatter and contents](https://cs.uwaterloo.ca/~watrous/TQI/TQI.frontmat
 |---|---|
 | A complex Euclidean space $`\mathcal X`$ | A finite-dimensional quantum register, often $`\mathbb C^R`$ |
 | A vector $`u`$ and its adjoint $`u^*`$ | $`|u\rangle`$ and $`\langle u|`$; $`uu^*`$ becomes $`|u\rangle\langle u|`$ |
-| $`\operatorname{Pos}(\mathcal X)`$ | Positive semidefinite operators, written $`A\succeq0`$ |
-| $`\operatorname D(\mathcal X)`$ | Density operators: positive operators with trace one |
-| A measurement $`\mu:\Sigma\to\operatorname{Pos}(\mathcal X)`$ | Effects $`\{A_a\}_a`$ with $`\sum_a A_a=I`$ |
-| $`\langle A,B\rangle=\operatorname{Tr}(A^*B)`$ | The Born probability $`\operatorname{Tr}(A\rho)`$ for effect $`A`$ and state $`\rho`$ |
-| An ensemble $`\eta(a)`$ | A subnormalized state $`\tau_a`$: its trace is outcome probability, and $`\tau_a/\operatorname{Tr}\tau_a`$ is the conditional state |
+| $`\mathrm{Pos}(\mathcal X)`$ | Positive semidefinite operators, written $`A\succeq0`$ |
+| $`\mathrm{D}(\mathcal X)`$ | Density operators: positive operators with trace one |
+| A measurement $`\mu:\Sigma\to\mathrm{Pos}(\mathcal X)`$ | Effects $`\{A_a\}_a`$ with $`\sum_a A_a=I`$ |
+| $`\langle A,B\rangle=\mathrm{Tr}(A^*B)`$ | The Born probability $`\mathrm{Tr}(A\rho)`$ for effect $`A`$ and state $`\rho`$ |
+| An ensemble $`\eta(a)`$ | A subnormalized state $`\tau_a`$: its trace is outcome probability, and $`\tau_a/\mathrm{Tr}\tau_a`$ is the conditional state |
 
 The project uses $`a\in\{1,2,3\}`$ for Alice's sent symbol. In the exclusion construction Bob outputs a pair $`b=(a,j)`$, where $`j`$ is his basis outcome; Alice's input $`S`$ is a set of forbidden pairs. The integer $`R`$ is Bob's target quantum dimension, while $`M`$ or $`K`$ counts a simulator's message values. The set size $`m=|S|`$ is a different quantity.
 
@@ -53,7 +53,7 @@ The computational basis in this expression defines transpose, denoted $`\mathsf 
 
 ```math
 \tau_a=
-\operatorname{Tr}_A
+\mathrm{Tr}_A
 \left[(A_a^{\mathsf T}\otimes I)|\Phi_R\rangle\langle\Phi_R|\right]
 =\frac{A_a}{R}.
 ```
@@ -62,7 +62,7 @@ Its trace is Alice's outcome probability. Conditional on receiving $`a`$, Bob me
 
 ```math
 p(a,j\mid S)
-=\operatorname{Tr}\!\left(
+=\mathrm{Tr}\!\left(
 \frac{A_{a|S}}R|u_{j|a}\rangle\langle u_{j|a}|
 \right)
 =\frac1R\langle u_{j|a}|A_{a|S}|u_{j|a}\rangle.
@@ -100,10 +100,10 @@ All three matrices are positive and their sum is $`I_2`$. They are real, so thei
 | Alice's message | Probability | Bob's normalized conditional state | Bob's conditional basis probabilities |
 |---|---:|---|---|
 | 1 | $`1/6`$ | $`|1\rangle\langle1|`$ | In basis1: $`(0,1)`$ |
-| 2 | $`5/12`$ | $`\operatorname{diag}(3/5,2/5)`$ | In basis2: $`(1/2,1/2)`$ |
-| 3 | $`5/12`$ | $`\operatorname{diag}(3/5,2/5)`$ | In basis3: $`(1/2,1/2)`$ |
+| 2 | $`5/12`$ | $`\mathrm{diag}(3/5,2/5)`$ | In basis2: $`(1/2,1/2)`$ |
+| 3 | $`5/12`$ | $`\mathrm{diag}(3/5,2/5)`$ | In basis3: $`(1/2,1/2)`$ |
 
-For example, $`\operatorname{Tr}(A_2)/2=5/12`$ and $`A_2/\operatorname{Tr}(A_2)=\operatorname{diag}(3/5,2/5)`$. Each vector in basis2 or3 has equal squared overlap with $`|0\rangle`$ and $`|1\rangle`$, which explains the equal conditional outcomes in those branches. Multiplying each branch probability by its conditional measurement probabilities yields the entire output distribution:
+For example, $`\mathrm{Tr}(A_2)/2=5/12`$ and $`A_2/\mathrm{Tr}(A_2)=\mathrm{diag}(3/5,2/5)`$. Each vector in basis2 or3 has equal squared overlap with $`|0\rangle`$ and $`|1\rangle`$, which explains the equal conditional outcomes in those branches. Multiplying each branch probability by its conditional measurement probabilities yields the entire output distribution:
 
 | Output label | $`(1,0)`$ | $`(1,1)`$ | $`(2,0)`$ | $`(2,1)`$ | $`(3,0)`$ | $`(3,1)`$ |
 |---|---:|---:|---:|---:|---:|---:|

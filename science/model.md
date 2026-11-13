@@ -12,7 +12,7 @@ Fix finite, nonempty input and output sets $`\mathcal X`$ and $`\mathcal B`$, an
 
 ```math
 p(b|x)=\sum_{a=1}^{3}
-\operatorname{tr}\!\left[\rho_{AB}
+\mathrm{tr}\!\left[\rho_{AB}
 \left(A_{a|x}\otimes B_{b|a}\right)\right].
 ```
 
@@ -28,7 +28,7 @@ A nonadaptive simulator uses an $`M`$-valued message $`m`$. Bob first measures a
 
 ```math
 q(b|x)=\sum_{m=1}^{M}\sum_c
-\operatorname{tr}\!\left[\sigma_{A'B'}
+\mathrm{tr}\!\left[\sigma_{A'B'}
 \left(E_{m|x}\otimes F_c\right)\right]
 r(b|m,c).
 ```
@@ -40,10 +40,10 @@ There is no bound relating $`\dim B'`$ to $`R`$. The shared state, its dimension
 There is only one Bob measurement because he has no independent input. Put
 
 ```math
-\pi(c)=\operatorname{tr}\!\left[\sigma_{A'B'}(I\otimes F_c)\right],
+\pi(c)=\mathrm{tr}\!\left[\sigma_{A'B'}(I\otimes F_c)\right],
 \qquad
 e(m|x,c)=
-\frac{\operatorname{tr}[\sigma_{A'B'}(E_{m|x}\otimes F_c)]}
+\frac{\mathrm{tr}[\sigma_{A'B'}(E_{m|x}\otimes F_c)]}
 {\pi(c)}
 ```
 

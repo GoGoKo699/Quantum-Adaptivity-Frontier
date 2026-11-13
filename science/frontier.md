@@ -69,12 +69,12 @@ The upper bounds are [Tavakoli's](../references/RELATED_WORK.md#tavakoli-2026). 
 Condition on shared randomness. Alice prepares the subnormalized receiver states
 
 ```math
-\tau_{a|x}=\operatorname{tr}_A
+\tau_{a|x}=\mathrm{tr}_A
 \!\left[(A_{a|x}\otimes I)\rho_{AB}\right],
 \qquad
 \tau_{a|x}\succeq0,
 \qquad
-\sum_a\operatorname{tr}\tau_{a|x}=1.
+\sum_a\mathrm{tr}\tau_{a|x}=1.
 ```
 
 Use a direct sum on at most $`3R`$ dimensions:
@@ -88,7 +88,7 @@ Use a direct sum on at most $`3R`$ dimensions:
 The $`\widetilde\tau_x`$ are density operators, the $`\widetilde B_b`$ form one POVM, and
 
 ```math
-p(b|x)=\operatorname{tr}
+p(b|x)=\mathrm{tr}
 \left(\widetilde\tau_x\widetilde B_b\right).
 ```
 

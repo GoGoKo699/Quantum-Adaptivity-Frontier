@@ -38,7 +38,7 @@ Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixe
 (1-t^2)^{R-1}.
 ```
 
-For completeness, take independent standard complex Gaussian variables $`g_1,\ldots,g_R`$. Their squared magnitudes are independent mean-one exponential variables, and $`g/\|g\|_2`$ is uniform on the sphere. If
+For completeness, take independent standard complex Gaussian variables $`g_1,\ldots,g_R`$. Their squared magnitudes are independent mean-one exponential variables, and $`g/\left\|g\right\|_2`$ is uniform on the sphere. If
 
 ```math
 X=|g_1|^2,
@@ -66,7 +66,7 @@ Only the displayed scalar tail is used below.
 
 The unit sphere in $`\mathbb C^s`$, regarded as a subset of $`\mathbb R^{2s}`$, has a $`\delta`$-net of cardinality at most $`(1+2/\delta)^{2s}`$. One proof takes a maximal $`\delta`$-separated set on the sphere. The open balls of radius $`\delta/2`$ around its points are disjoint and lie in the ball of radius $`1+\delta/2`$. Comparing their real $`2s`$-dimensional volumes bounds their number, and maximality supplies the covering property.
 
-Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choose $`1/8`$-nets on their unit spheres. For unit vectors $`v,w`$ attaining $`|v^\dagger Aw|=\|A\|_{\mathrm{op}}`$, choose net points $`v_0,w_0`$ within $`1/8`$. Since all four vectors have norm one,
+Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choose $`1/8`$-nets on their unit spheres. For unit vectors $`v,w`$ attaining $`|v^\dagger Aw|=\left\|A\right\|_{\mathrm{op}}`$, choose net points $`v_0,w_0`$ within $`1/8`$. Since all four vectors have norm one,
 
 ```math
 \begin{aligned}
@@ -78,15 +78,15 @@ Fix supports $`I,J`$ with $`p=|I|>0`$, $`q=|J|>0`$, and write $`A=U[I,J]`$. Choo
 -
 |v_0^\dagger A(w-w_0)|\\
 &\ge
-\frac34\|A\|_{\mathrm{op}}.
+\frac34\left\|A\right\|_{\mathrm{op}}.
 \end{aligned}
 ```
 
-Thus $`\|A\|_{\mathrm{op}}\ge1/4`$ forces at least one net bilinear form to have magnitude at least $`3/16`$. After embedding the net vectors on their fixed supports into $`\mathbb C^R`$, the Haar-coordinate formula applies to each pair. There are at most $`17^{2(p+q)}`$ pairs. Consequently,
+Thus $`\left\|A\right\|_{\mathrm{op}}\ge1/4`$ forces at least one net bilinear form to have magnitude at least $`3/16`$. After embedding the net vectors on their fixed supports into $`\mathbb C^R`$, the Haar-coordinate formula applies to each pair. There are at most $`17^{2(p+q)}`$ pairs. Consequently,
 
 ```math
 \Pr\!\left\{
-  \|U[I,J]\|_{\mathrm{op}}\ge\frac14
+  \left\|U[I,J]\right\|_{\mathrm{op}}\ge\frac14
 \right\}
 \le
 17^{2(p+q)}
