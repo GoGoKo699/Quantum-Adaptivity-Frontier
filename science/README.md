@@ -31,4 +31,4 @@ The original unbounded adaptive advantage, split-Gram measurement and universal 
 
 The [verification guide](../verification/README.md) documents finite diagnostics and their limits. The [repository overview](../README.md) provides direct routes for inspecting a specific claim; the full proof remains in these topic-based files.
 
-For a source-guided route into the same argument, use the [Watrous bridge](../learning/WATROUS_BRIDGE.md) and the [30 milestones](../learning/MILESTONES.md). The bridge's small complete experiment illustrates the measurement sequence without claiming the asymptotic separation.
+For a source-guided route into the same argument, use the [Watrous bridge](../learning/WATROUS_BRIDGE.md) and the [30 milestones](../learning/MILESTONES.md). The [small complete experiment](../learning/WORKED_EXAMPLE.md) illustrates the measurement sequence without claiming the asymptotic separation.

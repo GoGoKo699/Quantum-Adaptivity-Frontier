@@ -19,7 +19,8 @@ The selected educational anchor is **John Watrous, *The Theory of Quantum Inform
 
 | Start here | What it provides |
 |---|---|
-| [Watrous bridge](WATROUS_BRIDGE.md) | Relevant source sections, a notation dictionary, remote preparation, and a complete two-qubit example |
+| [Watrous bridge](WATROUS_BRIDGE.md) | Relevant source sections, notation, remote preparation, and the proof roadmap |
+| [Complete worked example](WORKED_EXAMPLE.md) | One Bell pair, three receiver bases, six forbidden inputs, and the full output distribution |
 | [Thirty-milestone map](MILESTONES.md) | The connected understanding route, from background objects to the full dimension–precision frontier |
 | [Scientific overview](../science/README.md) | The complete chain of models, constructions, lower bounds and upper bounds |
 | [Related work](../references/RELATED_WORK.md) | Attribution for imported theorems and the specific contribution beyond earlier adaptivity results |
@@ -29,7 +30,7 @@ The map contains exactly **M01–M30** in two phases: background/preliminaries a
 
 ## Follow the scientific story
 
-Begin with a measurement outcome as both a classical message and a way to condition Bob's state. Then understand why a receiver who measures before receiving the message has only a shared-random classical record in this no-receiver-input setting. The bridge's six-output example makes those operations explicit, while the [model](../science/model.md) fixes their general meaning.
+Begin with a measurement outcome as both a classical message and a way to condition Bob's state. Then understand why a receiver who measures before receiving the message has only a shared-random classical record in this no-receiver-input setting. The [six-output worked example](WORKED_EXAMPLE.md) makes those operations explicit, while the [model](../science/model.md) fixes their general meaning.
 
 The contribution combines three ingredients. [Uniformly controlled random bases](../science/random_bases.md) allow an input-dependent three-outcome sender measurement to exclude a constant fraction of output labels for every input subset, using the same three receiver bases. The [quantum construction](../science/quantum_construction.md) realizes the exact conditional probabilities. The [classical exclusion bound](../science/classical_exclusion.md) turns a forbidden output into a necessary simulation error; the [frontier theorem](../science/frontier.md) matches that lower bound with inherited universal upper bounds.
 

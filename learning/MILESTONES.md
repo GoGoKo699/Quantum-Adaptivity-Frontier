@@ -1,6 +1,6 @@
 # Thirty milestones for the adaptivity frontier
 
-[Learning guide](README.md) · [Watrous bridge](WATROUS_BRIDGE.md) · [Scientific account](../science/README.md)
+[Learning guide](README.md) · [Watrous bridge](WATROUS_BRIDGE.md) · [Complete worked example](WORKED_EXAMPLE.md) · [Scientific account](../science/README.md)
 
 This map follows the project's argument, from individual states and measurements to a uniform law for the strongest possible communication advantage. Its single educational anchor is John Watrous, *The Theory of Quantum Information* (2018), using the author's January-2018 pre-publication manuscript. Section, equation and exercise identifiers below refer to that manuscript; page numbers are its printed page numbers, not PDF-page indices.
 
@@ -78,7 +78,7 @@ Watrous supplies the foundations. The project proof pages supply its particular 
 
 **Conceptual connection:** A kernel of an Alice effect will later become an exactly forbidden Bob output.
 
-**Source pointers:** Watrous [§2.3.2, Eq. (2.226), and Exercise 2.2, p. 120][W2]; [quantum construction: protocol and exact output distribution](../science/quantum_construction.md#protocol-and-exact-output-distribution).
+**Source pointers:** Watrous [§2.3.2, Eq. (2.226), and Exercise 2.2, p. 120][W2]; [quantum construction: protocol and exact output distribution](../science/quantum_construction.md#protocol-and-exact-output-distribution), and the [complete two-qubit example](WORKED_EXAMPLE.md).
 
 ### M06 — What the message is allowed to change
 
@@ -346,7 +346,7 @@ Watrous supplies the foundations. The project proof pages supply its particular 
 
 **Conceptual connection:** The message chooses a quantum measurement on Bob's still-available share; remote conditioning is the operational link from the POVM proof to exclusion.
 
-**Source pointers:** Watrous [§2.3.2, Eq. (2.226), and Exercise 2.2][W2], plus [§6.1.2][W6]; [quantum construction: protocol and exact output distribution](../science/quantum_construction.md#protocol-and-exact-output-distribution).
+**Source pointers:** Watrous [§2.3.2, Eq. (2.226), and Exercise 2.2][W2], plus [§6.1.2][W6]; [quantum construction: protocol and exact output distribution](../science/quantum_construction.md#protocol-and-exact-output-distribution), and the [complete two-qubit example](WORKED_EXAMPLE.md).
 
 ### M25 — Exact descriptions and the implementation boundary
 
