@@ -40,6 +40,12 @@ The [scientific overview](science/README.md) connects the operational question, 
 
 The [reading guide](llms.txt) maps specific questions to the complete proof files.
 
+## Learn the argument
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**, using the author's January 2018 standard-layout manuscript. The [source-to-project bridge](learning/WATROUS_BRIDGE.md) identifies the relevant sections, translates notation, and begins with a complete two-qubit experiment. It separates textbook foundations from imported research theorems and the new frontier proof.
+
+The [30-milestone map](learning/MILESTONES.md) follows the project's story through 12 background milestones and 18 narrative milestones. Its two phases connect individual objects to the full model, then the construction and converse to the joint resource law. Start with the [learning guide](learning/README.md); specialists can continue directly to the scientific accounts above.
+
 ## Reproduce the checks
 
 From the repository root:

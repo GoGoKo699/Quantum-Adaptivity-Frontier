@@ -201,4 +201,3 @@ The [basis lemma](random_bases.md) permits bases with entries in $`\mathbb Q(i)`
 This does not establish efficient local synthesis or a practical communication experiment. The theorem counts communication alphabet size and target entanglement dimension, with arbitrary local processing as specified in the model. Finding and certifying the bases, storing their descriptions, computing Alice's input-dependent POVM, and implementing it are not bounded by a claimed algorithmic runtime here.
 
 The uniform positivity margins support the exact existence proof. They do not by themselves turn an imperfect physical implementation into a zero-error protocol. Any implementation errors contribute to the allowed operational error; the [interpretation](interpretation.md) keeps this distinction explicit.
-

@@ -166,4 +166,3 @@ The [Gram construction](quantum_construction.md) then uses finite rational matri
 These bases allow exclusion sets containing $`\Theta(R)`$ labeled vectors while retaining the positivity margin required by the quantum measurement. The earlier mutually unbiased basis construction used a Frobenius-norm estimate with a quadratic relation between entanglement dimension and excluded-set size. The exact measurement construction itself is inherited; replacing that estimate by uniform cross-submatrix control is the step used here.
 
 The [classical exclusion converse](classical_exclusion.md) converts this constant-density family into a simulation lower bound. The [frontier theorem](frontier.md) combines it with the inherited universal upper bounds. The [interpretation](interpretation.md) separates alphabet size, bits, dimension, and the uncharged local processing.
-

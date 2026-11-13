@@ -65,3 +65,32 @@ The accompanying JSON is produced directly by this checker. It records the
 actual Python, NumPy, and SciPy versions used for that run; rerunning overwrites
 the report with the new observations. The requirements describe compatible
 dependencies rather than a hardware-specific environment lock.
+
+## Navigation and shared learning-map checks
+
+Run the structural checker separately:
+
+```bash
+python3 verification/check_repository.py --output /tmp/adaptivity-structure.json
+```
+
+This checker uses only Python's standard library. It checks relative Markdown
+destinations and heading fragments, balanced code/math delimiters, the ordered
+M01–M30 map, its declared two-phase partition, nonempty milestone fields,
+earlier-only dependency links, and linked source pointers. It checks that each
+Markdown page is reachable from the repository overview and that local file
+routes named in the LLM reading guide exist. It also checks that
+the learning guide and bridge identify the selected Watrous 2018 source and
+flags a narrow set of personal/process filenames and text markers. The JSON
+records the inspected Markdown file hashes so a later edit is distinguishable
+from the checked content.
+
+These checks establish structural consistency. They do not judge the scientific
+accuracy of an explanation, the educational value of a milestone, source-page
+accuracy, rendered mathematics, or external-link availability. The marker scan
+does not replace a manual review of publication content. Actual hosted visual
+inspection and scientific/learning review are separate observations.
+
+The [hosted mathematics guide](hosted_math/README.md) gives the source-bound
+GitHub capture and comparison procedure, its reproduction commands, and the
+additional visual inspection needed to interpret its results.

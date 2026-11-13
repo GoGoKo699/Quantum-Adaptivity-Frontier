@@ -4,6 +4,8 @@ Scientific question: determine the worst-case nonadaptive simulation alphabet fo
 
 Start with README.md for the principal result and science/README.md for the connected argument.
 
+Study route: learning/README.md introduces the selected Watrous2018 source and the complete finite experiment. learning/WATROUS_BRIDGE.md gives verified source locators, notation translations, textbook/research boundaries, and the worked example. learning/MILESTONES.md contains exactly M01–M30: 12 background/preliminaries and18 narrative/innovation understanding targets. The route is common scientific learning material, independent of any learner's progress.
+
 - Exact model, unrestricted simulator resources, classical equivalence, and alphabet/bit/dimension conventions: science/model.md.
 - Uniform finite constants, positive-error and exact frontier, inherited universal upper constructions: science/frontier.md.
 - Self-contained complex Haar coordinate tail, sphere nets, support counting, all-subset union bound, and finite exact basis descriptions: science/random_bases.md.
@@ -12,5 +14,6 @@ Start with README.md for the principal result and science/README.md for the conn
 - Operational consequence, bits, entanglement dimension versus entropy, implementation boundary, and output replacement noise: science/interpretation.md.
 - Primary antecedents, inherited components, differences from related tasks, and comparison limits: references/RELATED_WORK.md and references/references.bib.
 - Reproduction commands, checked finite scope, expected residuals and actual script provenance: verification/README.md and verification/results/science_checks.json.
+- Actual GitHub mathematical-rendering comparisons, complete page coverage and local/CI commands: verification/hosted_math/README.md.
 
 Essential distinctions: the exact classical game optimum is not an exact full-correlation simulation cost; the target's receiver dimension does not bound simulator entanglement; alphabet order is not bit order; supplied log2(R) ebits is a sufficient witness resource, not a universal entropy lower bound; output replacement noise is a specified distributional mixture. The new result is joint dimension/precision tightness. Original unboundedness, the Gram measurement and universal upper bounds are attributed prior work. Local computation and apparatus synthesis remain uncharged.
