@@ -1,0 +1,16 @@
+# Quantum Adaptivity Frontier — reading guide
+
+Scientific question: determine the worst-case nonadaptive simulation alphabet for a single entanglement-assisted trit, with no independent receiver input, finite receiver quantum dimension, and worst-input total-variation error.
+
+Start with README.md for the principal result and science/README.md for the connected argument.
+
+- Exact model, unrestricted simulator resources, classical equivalence, and alphabet/bit/dimension conventions: science/model.md.
+- Uniform finite constants, positive-error and exact frontier, inherited universal upper constructions: science/frontier.md.
+- Self-contained complex Haar coordinate tail, sphere nets, support counting, all-subset union bound, and finite exact basis descriptions: science/random_bases.md.
+- Positive split-Gram POVM, empty blocks, exact kernels, conditional preparation and full Born probabilities: science/quantum_construction.md.
+- Established classical subset-guessing inequality, exact exclusion minimax value, and the necessary implication to correlation simulation error: science/classical_exclusion.md.
+- Operational consequence, bits, entanglement dimension versus entropy, implementation boundary, and output replacement noise: science/interpretation.md.
+- Primary antecedents, inherited components, differences from related tasks, and comparison limits: references/RELATED_WORK.md and references/references.bib.
+- Reproduction commands, checked finite scope, expected residuals and actual script provenance: verification/README.md and verification/results/science_checks.json.
+
+Essential distinctions: the exact classical game optimum is not an exact full-correlation simulation cost; the target's receiver dimension does not bound simulator entanglement; alphabet order is not bit order; supplied log2(R) ebits is a sufficient witness resource, not a universal entropy lower bound; output replacement noise is a specified distributional mixture. The new result is joint dimension/precision tightness. Original unboundedness, the Gram measurement and universal upper bounds are attributed prior work. Local computation and apparatus synthesis remain uncharged.
