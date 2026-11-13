@@ -18,7 +18,7 @@ The lower construction and inherited upper bounds yield
 ```math
 M_*(R,\varepsilon)
 =\Theta\!\left(\min\!\left\{R,\ln\frac1\varepsilon\right\}\right)
-\quad(0<\varepsilon\le1/2),
+\quad(0\lt \varepsilon\le1/2),
 \qquad
 M_*(R,0)=\Theta(R).
 ```

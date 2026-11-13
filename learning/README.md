@@ -8,7 +8,7 @@ The worst target's required nonadaptive alphabet has order
 
 ```math
 \min\!\left\{R,1+\ln\frac1\varepsilon\right\}
-\qquad(0<\varepsilon\le1/2),
+\qquad(0\lt \varepsilon\le1/2),
 ```
 
 and order $`R`$ at exact accuracy. Here the alphabet counts possible message values. The fixed-length binary cost is its base-two logarithm rounded up. The [scientific theorem](../science/frontier.md) gives precise uniform constants and assumptions.

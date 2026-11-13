@@ -59,9 +59,9 @@ The matrix $`G`$ is uniformly invertible. To verify this, write a vector in its 
 \begin{aligned}
 |z^\dagger(G-I_m)z|
 &\le
-2\sum_{a<b}\|G_{ab}\|_{\mathrm{op}}r_ar_b\\
+2\sum_{a\lt b}\|G_{ab}\|_{\mathrm{op}}r_ar_b\\
 &\le
-\frac12\sum_{a<b}r_ar_b\\
+\frac12\sum_{a\lt b}r_ar_b\\
 &\le
 \frac12\sum_a r_a^2.
 \end{aligned}

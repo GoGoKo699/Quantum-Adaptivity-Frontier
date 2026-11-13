@@ -6,7 +6,7 @@ The target sends a single ternary message and has receiver dimension at most $`R
 
 ## Main theorem
 
-For every integer $`R\ge1`$ and $`0<\varepsilon\le1/2`$,
+For every integer $`R\ge1`$ and $`0\lt \varepsilon\le1/2`$,
 
 ```math
 \frac1{4096}\min\!\left\{R,\ln\frac1\varepsilon\right\}
@@ -48,7 +48,7 @@ Then
 m+1\le M_*(R,0)\le3R,
 ```
 
-and, for $`0<\varepsilon\le1/2`$,
+and, for $`0\lt \varepsilon\le1/2`$,
 
 ```math
 M_*(R,\varepsilon)
@@ -167,7 +167,7 @@ K\ge\max\!\left\{1,
 
 This real-valued inequality makes no claim that $`m/2`$ or $`\ln(1/\varepsilon)/\lambda`$ is an attainable integer alphabet. It is a necessary bound for every simulator, hence for $`M_\varepsilon(p_R)`$ and its supremum.
 
-For $`R\ge2048`$, $`m\ge R/2048`$. Also $`\lambda<4096`$. With $`L=\ln(1/\varepsilon)`$,
+For $`R\ge2048`$, $`m\ge R/2048`$. Also $`\lambda\lt 4096`$. With $`L=\ln(1/\varepsilon)`$,
 
 ```math
 M_*(R,\varepsilon)
@@ -175,7 +175,7 @@ M_*(R,\varepsilon)
 \ge\frac1{4096}\min\{R,L\}.
 ```
 
-For $`1\le R<2048`$, the trivial bound $`M_*\ge1`$ is at least $`\min\{R,L\}/4096`$. Thus the stated lower bound also covers every smaller dimension.
+For $`1\le R\lt 2048`$, the trivial bound $`M_*\ge1`$ is at least $`\min\{R,L\}/4096`$. Thus the stated lower bound also covers every smaller dimension.
 
 For the final upper simplification, $`L\ge\ln2`$ implies
 
@@ -195,7 +195,7 @@ For $`R\ge2048`$, every $`K\le m`$ has
 \frac{\binom mK}{\binom{3R}K}>0.
 ```
 
-Thus exact simulation of $`p_R`$ needs at least $`m+1`$ symbols. This uses only a lower bound from the exclusion task; it does not assert that $`m+1`$ symbols reproduce the full correlation. Since $`m+1>R/1024`$, it in particular exceeds $`R/2048`$. For $`R<2048`$, $`M_*\ge1>R/2048`$. The inherited exact upper bound $`3R`$ completes the zero-error result.
+Thus exact simulation of $`p_R`$ needs at least $`m+1`$ symbols. This uses only a lower bound from the exclusion task; it does not assert that $`m+1`$ symbols reproduce the full correlation. Since $`m+1>R/1024`$, it in particular exceeds $`R/2048`$. For $`R\lt 2048`$, $`M_*\ge1>R/2048`$. The inherited exact upper bound $`3R`$ completes the zero-error result.
 
 ## Consequence and scope
 

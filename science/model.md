@@ -78,7 +78,7 @@ d_{\mathrm{TV}}(p,q)=
 \sum_{b\in\mathcal B}|p(b|x)-q(b|x)|.
 ```
 
-For $`0\le\varepsilon<1`$, let $`M_\varepsilon(p)`$ be the smallest positive integer $`M`$ for which an admissible nonadaptive simulator satisfies $`d_{\mathrm{TV}}(p,q)\le\varepsilon`$. Equality is required when $`\varepsilon=0`$. The [exact dimension upper bound](frontier.md#inherited-exact-dimension-upper-bound) ensures this minimum is finite.
+For $`0\le\varepsilon\lt 1`$, let $`M_\varepsilon(p)`$ be the smallest positive integer $`M`$ for which an admissible nonadaptive simulator satisfies $`d_{\mathrm{TV}}(p,q)\le\varepsilon`$. Equality is required when $`\varepsilon=0`$. The [exact dimension upper bound](frontier.md#inherited-exact-dimension-upper-bound) ensures this minimum is finite.
 
 The quantity studied here is
 

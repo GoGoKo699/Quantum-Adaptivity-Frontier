@@ -18,7 +18,7 @@ There are three orthonormal bases of $`\mathbb C^R`$, represented by unitary mat
 \left\|
   U_a[:,I]^\dagger U_b[:,J]
 \right\|_{\mathrm{op}}
-<
+\lt 
 \frac14
 ```
 
@@ -28,7 +28,7 @@ The same triple works simultaneously for all those pairs of subsets. Its matrice
 
 ## A complex Haar coordinate
 
-Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixed unit vectors. Unitary invariance makes $`Uy`$ uniform on the complex unit sphere, so $`|x^\dagger Uy|`$ has the distribution of the absolute value of its first coordinate. For $`0\le t<1`$,
+Let $`U`$ be Haar distributed on $`U(R)`$, and let $`x,y\in\mathbb C^R`$ be fixed unit vectors. Unitary invariance makes $`Uy`$ uniform on the complex unit sphere, so $`|x^\dagger Uy|`$ has the distribution of the absolute value of its first coordinate. For $`0\le t\lt 1`$,
 
 ```math
 \Pr\!\left\{
@@ -97,7 +97,7 @@ Empty supports never violate the desired bound.
 
 ## One union bound covers all inputs
 
-It suffices to control supports of total size exactly $`m`$. Any pair with smaller total size can be enlarged to such a pair, because $`m<R`$. A submatrix's operator norm cannot decrease when rows or columns are added.
+It suffices to control supports of total size exactly $`m`$. Any pair with smaller total size can be enlarged to such a pair, because $`m\lt R`$. A submatrix's operator norm cannot decrease when rows or columns are added.
 
 The number of ordered support pairs with total size $`m`$ is
 
@@ -120,7 +120,7 @@ B_R
 \left(\frac{247}{256}\right)^{R-1}.
 ```
 
-This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R}{m}\le(2eR/m)^m`$, and the function $`s\mapsto s\ln(2eR/s)`$ increases on $`0<s<2R`$. Using $`m\le R/1024`$ and $`\ln(1-u)\le-u`$ gives
+This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R}{m}\le(2eR/m)^m`$, and the function $`s\mapsto s\ln(2eR/s)`$ increases on $`0\lt s\lt 2R`$. Using $`m\le R/1024`$ and $`\ln(1-u)\le-u`$ gives
 
 ```math
 \ln B_R
@@ -131,14 +131,14 @@ This bound is strictly less than one for every $`R\ge1024`$. Indeed, $`\binom{2R
 -\frac{9(R-1)}{256}.
 ```
 
-The elementary bounds $`\ln3<2`$, $`\ln2048<8`$, and $`\ln17<3`$ imply
+The elementary bounds $`\ln3\lt 2`$, $`\ln2048\lt 8`$, and $`\ln17\lt 3`$ imply
 
 ```math
 \ln B_R
-<
+\lt 
 2+\frac{36}{1024}
 -\frac{21R}{1024}
-<
+\lt 
 0
 \qquad
 (R\ge1024).
