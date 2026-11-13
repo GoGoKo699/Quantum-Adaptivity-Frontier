@@ -27,7 +27,7 @@ The [frontmatter and contents](https://cs.uwaterloo.ca/~watrous/TQI/TQI.frontmat
 | Watrous notation | Repository notation and meaning |
 |---|---|
 | A complex Euclidean space $`\mathcal X`$ | A finite-dimensional quantum register, often $`\mathbb C^R`$ |
-| A vector $`u`$ and its adjoint $`u^*`$ | $`|u\rangle`$ and $`\langle u|`$; $`uu^*`$ becomes $`|u\rangle\langle u|`$ |
+| A vector $`u`$ and its adjoint $`u^*`$ | $`\vert u\rangle`$ and $`\langle u\vert `$; $`uu^*`$ becomes $`\vert u\rangle\langle u\vert `$ |
 | $`\mathrm{Pos}(\mathcal X)`$ | Positive semidefinite operators, written $`A\succeq0`$ |
 | $`\mathrm{D}(\mathcal X)`$ | Density operators: positive operators with trace one |
 | A measurement $`\mu:\Sigma\to\mathrm{Pos}(\mathcal X)`$ | Effects $`\{A_a\}_a`$ with $`\sum_a A_a=I`$ |

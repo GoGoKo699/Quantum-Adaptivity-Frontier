@@ -16,9 +16,9 @@ Bob has three possible measurement bases. Their output labels include the basis 
 
 | Sent symbol $`a`$ | Basis outcome $`j=0`$ | Basis outcome $`j=1`$ |
 |---|---|---|
-| 1 | $`|0\rangle`$ | $`|1\rangle`$ |
-| 2 | $`|+\rangle=(|0\rangle+|1\rangle)/\sqrt2`$ | $`|-\rangle=(|0\rangle-|1\rangle)/\sqrt2`$ |
-| 3 | $`|+i\rangle=(|0\rangle+i|1\rangle)/\sqrt2`$ | $`|-i\rangle=(|0\rangle-i|1\rangle)/\sqrt2`$ |
+| 1 | $`\vert 0\rangle`$ | $`\vert 1\rangle`$ |
+| 2 | $`\vert +\rangle=(\vert 0\rangle+\vert 1\rangle)/\sqrt2`$ | $`\vert -\rangle=(\vert 0\rangle-\vert 1\rangle)/\sqrt2`$ |
+| 3 | $`\vert +i\rangle=(\vert 0\rangle+i\vert 1\rangle)/\sqrt2`$ | $`\vert -i\rangle=(\vert 0\rangle-i\vert 1\rangle)/\sqrt2`$ |
 
 Alice's allowed inputs are the six singleton forbidden sets. First consider $`S=\{(1,0)\}`$: Bob must avoid the computational-basis label $`(1,0)`$. Set
 
@@ -33,7 +33,7 @@ All three matrices are positive and their sum is $`I_2`$. They are real, so thei
 
 | Alice's message | Probability | Bob's normalized conditional state | Bob's conditional basis probabilities |
 |---|---:|---|---|
-| 1 | $`1/6`$ | $`|1\rangle\langle1|`$ | In basis1: $`(0,1)`$ |
+| 1 | $`1/6`$ | $`\vert 1\rangle\langle1\vert `$ | In basis1: $`(0,1)`$ |
 | 2 | $`5/12`$ | $`\mathrm{diag}(3/5,2/5)`$ | In basis2: $`(1/2,1/2)`$ |
 | 3 | $`5/12`$ | $`\mathrm{diag}(3/5,2/5)`$ | In basis3: $`(1/2,1/2)`$ |
 
